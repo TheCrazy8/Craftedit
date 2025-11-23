@@ -1,0 +1,66 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="craftedit"
+version="${file.jarVersion}"
+displayName="Craftedit"
+authors="TheCrazy8"
+description='''
+A CraftTweaker editor mod for Minecraft that allows editing and creating recipes for multiple recipe types.
+
+Supported Recipe Types:
+- Crafting Table recipes
+- Brewing Stand recipes  
+- Furnace recipes (Furnace, Blast Furnace, Smoker)
+- Botany Pot recipes
+- Anvil recipes
+- Smithing Table recipes
+
+Integrates with CraftTweaker, Botany Pots, Create mods, and EMI for recipe viewing.
+
+Works on both client and dedicated servers.
+'''
+
+[[dependencies.craftedit]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.craftedit]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.craftedit]]
+modId="crafttweaker"
+mandatory=true
+versionRange="[14.0.0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.craftedit]]
+modId="botanypots"
+mandatory=false
+versionRange="[11.0.0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.craftedit]]
+modId="create"
+mandatory=false
+versionRange="[0.5.0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.craftedit]]
+modId="emi"
+mandatory=false
+versionRange="[1.0.0,)"
+ordering="AFTER"
+side="CLIENT"
